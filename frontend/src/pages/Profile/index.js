@@ -21,7 +21,7 @@ export default function Profile(){
         Authorization: ongId,
       }
     }).then( response => {
-        setIncidents(response.data.incidents)
+        setIncidents(response.data)
     })
   }, [ongId])
 
